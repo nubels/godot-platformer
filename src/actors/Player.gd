@@ -6,4 +6,5 @@ func _ready() -> void:
 
 func _physics_process(delta: float) -> void:
 	var velocity := Vector2(300, 0)
-	move_and_slide(velocity * delta)
+	var move := move_and_slide(velocity * delta)
+	print(move)
